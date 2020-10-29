@@ -56,7 +56,7 @@ public class prc2 {
 		  System.out.println(7.0 / 2.0);
 
 		  // 7を2.0で割った値を出力
-		  System.out.println(6 / 2.0);
+		  System.out.println(7 / 2.0);
 
 		  //int型同士で正確な値を出したいときキャストを使い、データ型を変更する
 		  System.out.println((double)month / date);
