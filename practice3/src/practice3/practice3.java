@@ -56,9 +56,6 @@ public class practice3 {
 	    // 「8 < 5」でない、の結果を出力してください
 	    System.out.println(!(8 < 5));
 
-
-
-
 		}
 }
 
