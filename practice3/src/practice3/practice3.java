@@ -58,6 +58,8 @@ public class practice3 {
 	    System.out.println(!(8 < 5));
 
 	    // 条件分岐
+
+	    //if文
 	    System.out.println("条件分岐");
 	    // 条件式に直接trueをいれてください
 	    if (true) {
@@ -89,6 +91,95 @@ public class practice3 {
 	    }else{
 	      System.out.println("20以上");
 	    }
+
+	    //switch文
+
+	    // numberを3で割った余りで条件分岐
+	    int number = 15;
+
+	    switch(number % 3){
+	    case 0:
+	      System.out.println("3で割り切れます");
+	      break;
+	    case 1:
+	      System.out.println("3で割ると1余ります");
+	      break;
+	    case 2:
+	      System.out.println("3で割ると2余ります");
+	      break;
+	    }
+
+	    // defaultを用いて、どのcaseにも合致しない場合
+	    switch (number % 5) {
+	      case 0:
+	        System.out.println("大吉です");
+	        break;
+	      case 1:
+	        System.out.println("中吉です");
+	        break;
+	      case 4:
+	        System.out.println("凶です");
+	        break;
+	      default:
+	        System.out.println("吉です");
+	        break;
+	    }
+
+	    //while文
+
+	    // while文を用いて、numberが0より大きい場合に繰り返す、繰り返す処理
+	    while(number > 0){
+	      System.out.println(number);
+	      number --;
+	    }
+	    //for文
+	    // for文を用いた、繰り返し処理
+	    for(int i = 1; i <= 10; i++) // 最後の変数の更新にはつけない
+	    System.out.println(i+ "回目のループです");
+
+	    // breakとcontinue
+	    System.out.println("=== while文 ===");
+	    int i = 1;
+	    while (i < 10) {
+	      // iが5の倍数のとき、繰り返し処理を終了する
+	      if(i % 5 == 0){
+	        break;     //breakは処理を強制的に止める。
+	      }
+
+	      System.out.println(i);
+	      i++;
+	    }
+
+	    System.out.println("=== for文 ===");
+	    for (int j = 1; j < 10; j++) {
+	      // jが3の倍数のとき、処理をスキップする
+	      if(j % 3 == 0 ){
+	        continue;     //continueはその時だけ処理をスキップする
+	      }
+
+	      System.out.println(j);
+	    }
+
+	    //配列
+	    String[]names = {"asumi", "asumi",  "kazuki", "nosuke"};
+
+	    // インデックス番号が0の要素を出力
+	    System.out.println(names[0]);
+
+	    // インデックス番号が2の要素を出力
+	    System.out.println(names[2] );
+	    
+	    // 変数languagesを定義し、配列を代入
+	    String[] languages = {"Ruby", "PHP", "Python"};
+	    
+	    // インデックス番号が「1」の要素を出力してください
+	    System.out.println(languages[1]);
+	    
+	    // インデックス番号が「1」の要素を「Java」で上書きしてください
+	    languages[1] =  "Java";
+	    
+	    // インデックス番号が「1」の要素を出力してください
+	    System.out.println(languages[1]);
 
 	}
 }
