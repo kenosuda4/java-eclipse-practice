@@ -168,18 +168,66 @@ public class practice3 {
 
 	    // インデックス番号が2の要素を出力
 	    System.out.println(names[2] );
-	    
+
 	    // 変数languagesを定義し、配列を代入
-	    String[] languages = {"Ruby", "PHP", "Python"};
-	    
-	    // インデックス番号が「1」の要素を出力してください
-	    System.out.println(languages[1]);
-	    
-	    // インデックス番号が「1」の要素を「Java」で上書きしてください
-	    languages[1] =  "Java";
-	    
-	    // インデックス番号が「1」の要素を出力してください
-	    System.out.println(languages[1]);
+	    String[] swim = {"Fly", "Fr", "Br"};
+
+	    // インデックス番号が「1」の要素を出力
+	    System.out.println(swim[0]);
+
+	    // インデックス番号が「1」の要素を「Java」で上書
+	    swim[1] =  "Ba";
+
+	    // インデックス番号が「1」の要素を出力
+	    System.out.println(swim[1]);
+
+	    //配列の繰り返し
+	    String[] weights = {"ミニマム", "ライトフライ", "フライ"};
+
+	    // for文を用いて、「階級は◯◯です」と出力
+	    for(int w = 0;w < weights.length; w++){
+	    System.out.println("階級は" + weights[w] + "です。");
+	    }
+
+	    //拡張配列　for(データ型 変数名:配列名){処理;} 配列の中身全て表示するならこっちの方が楽にかける
+	    for(String weight:weights){
+	        System.out.println(weight);
+	    }
+
+	    System.out.println("まとめ for文を用いて、配列numbersの偶数の和と奇数の和を求める");
+	    System.out.println("拡張for文");
+	    // for文を用いて、配列numbersの偶数の和と奇数の和を求める
+	    int[] maths = {1, 4, 6, 9, 13, 16};
+
+	    int oddSum = 0;
+	    int evenSum = 0;
+
+
+	    for(int math:maths){
+	      if (math % 2 == 0){
+	        evenSum += math;
+	      }else{
+	        oddSum += math;
+	      }
+	    }
+	    System.out.println("奇数の和は" + oddSum + "です");
+	    System.out.println("偶数の和は" + evenSum + "です");
+
+	    System.out.println("通常for文");
+	    int[] matematica = {1, 4, 6, 9, 13, 16};
+	    int odd = 0;
+	    int even = 0;
+
+	    for (int m = 0; m < matematica.length; m++){
+	    	if ( matematica[m] % 2 == 0) {
+	    	even += matematica[m];
+	    	} else {
+	    	odd += matematica[m];
+	    	}
+	    }
+	    System.out.println("奇数の和は" + odd + "です");
+	    System.out.println("偶数の和は" + even + "です");
+
 
 	}
 }
